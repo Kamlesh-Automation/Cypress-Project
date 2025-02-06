@@ -12,11 +12,13 @@ describe('This is my 4th Test Suit', function(){
             //Mocha
             expect(str).to.equal('Hello , share this practice page and share your knowledge')
         })
+        
+         //windows: confirm
         cy.on('window:confirm',(str)=>{
             expect(str).to.equal('Hello , Are you sure you want to confirm?')
         })
 
-        //windows: confirm
+       
 
 })
 })
